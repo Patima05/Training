@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_gravity="center_horizontal"
+    android:layout_marginStart="8dp"
+    android:padding="10dp"
+    android:background="@drawable/stroke_light_green">
+
+    <ImageView
+        android:id="@+id/img"
+        android:layout_width="199dp"
+        android:layout_height="137dp"
+        android:src="@drawable/item_type1"
+        android:background="@drawable/background_light_green"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+    <TextView
+        android:id="@+id/typeName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:text="@string/item_name"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/img" />
+
+    <TextView
+        android:id="@+id/lessNum"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="4dp"
+        android:text="@string/item_less_num"
+        android:textSize="12sp"
+        android:alpha="0.64"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/typeName"
+        app:layout_constraintTop_toBottomOf="@+id/typeName" />
+
+    <TextView
+        android:id="@+id/level"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/item_level"
+        android:marginStart="18dp"
+        android:textSize="12sp"
+        android:alpha="0.64"
+        app:layout_constraintStart_toEndOf="@+id/lessNum"
+        app:layout_constraintTop_toTopOf="@+id/lessNum"/>
+
+    <ImageView
+        android:id="@+id/btnLike"
+        android:layout_width="34dp"
+        android:layout_height="34dp"
+        android:background="@drawable/stroke_light_green"
+        android:padding="5dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintEnd_toEndOf="@+id/img"
+        app:layout_constraintTop_toBottomOf="@+id/img"
+        tools:srcCompat="@drawable/icon_heart" />
+
+    <ImageView
+        android:id="@+id/imgLike1"
+        android:layout_width="10dp"
+        android:layout_height="10dp"
+        android:src="@drawable/like1"
+        android:layout_marginTop="6dp"
+        app:layout_constraintTop_toBottomOf="@id/lessNum"
+        app:layout_constraintStart_toStartOf="@id/lessNum"/>
+
+    <ImageView
+        android:id="@+id/imgLike2"
+        android:layout_width="10dp"
+        android:layout_height="10dp"
+        android:src="@drawable/like1"
+        android:layout_marginTop="6dp"
+        android:layout_marginStart="6dp"
+        app:layout_constraintTop_toBottomOf="@id/lessNum"
+        app:layout_constraintStart_toStartOf="@id/lessNum"/>
+
+    <ImageView
+        android:id="@+id/imgLike3"
+        android:layout_width="10dp"
+        android:layout_height="10dp"
+        android:src="@drawable/like1"
+        android:layout_marginTop="6dp"
+        android:layout_marginStart="12dp"
+        app:layout_constraintTop_toBottomOf="@id/lessNum"
+        app:layout_constraintStart_toStartOf="@id/lessNum"/>
+
+    <ImageView
+        android:id="@+id/imgLike4"
+        android:layout_width="10dp"
+        android:layout_height="10dp"
+        android:src="@drawable/like1"
+        android:layout_marginTop="6dp"
+        android:layout_marginStart="18dp"
+        app:layout_constraintTop_toBottomOf="@id/lessNum"
+        app:layout_constraintStart_toStartOf="@id/lessNum"/>
+
+    <TextView
+        android:id="@+id/likes"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/item_likes"
+        android:textSize="8sp"
+        android:layout_marginTop="6dp"
+        android:gravity="center_vertical"
+        android:alpha="0.64"
+        android:layout_marginStart="4dp"
+        app:layout_constraintStart_toEndOf="@id/imgLike4"
+        app:layout_constraintTop_toBottomOf="@+id/lessNum"
+        tools:ignore="SmallSp" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnStart"
+        android:layout_width="198dp"
+        android:background="@drawable/background_btn_light_green"
+        android:layout_height="42dp"
+        android:layout_marginTop="10dp"
+        android:text="@string/btn_start_training"
+        android:fontFamily="sans-serif"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/likes" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

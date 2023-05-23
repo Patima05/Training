@@ -1,3 +1,13 @@
 <resources>
     <string name="app_name">Training</string>
+    <string name="categories1">Bikram</string>
+    <string name="categories2">Jnana</string>
+    <string name="categories3">Kundalini</string>
+    <string name="categories4">Hatha</string>
+    <string name="featured">Featured for you</string>
+    <string name="item_name">Bikram yoga</string>
+    <string name="item_less_num">12 Lessons</string>
+    <string name="item_level">| Beginer</string>
+    <string name="item_likes">123,45 people Loved it</string>
+    <string name="btn_start_training">Start training</string>
 </resources>
